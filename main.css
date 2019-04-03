@@ -1,0 +1,524 @@
+/********************** Font **************************/
+@font-face {
+    font-family: 'myfont';
+    src: url('../fonts/myfont-webfont.eot');
+    src: url('../fonts/myfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myfont-webfont.woff2') format('woff2'),
+         url('../fonts/myfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    transition: .5s !important;
+}
+/********************** RESET **************************/
+body {
+    color: #fff !important;
+    font-size: 14px !important;
+    background-color: #121619;
+    font-family: myfont, sans-serif, fontawesome !important;
+    direction: rtl !important;
+    text-align: right !important;
+}
+a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/********************** HEADER **************************/
+.menu {
+    background: #111;
+}
+a.logo {
+    padding: 10px 7px;
+    text-align: center;
+}
+.menu .logo img {
+    width: 133px;
+}
+ul#menu-top>li, ul.social-media>li {
+    display: inline-block;
+}
+ul#menu-top {
+    margin: auto 0 !important;
+    padding: 16px 7px !important;
+}
+ul#menu-top>li {
+    padding: 9px 14px;
+    position: relative;
+}
+ul#menu-top>li:hover {
+    background: #00000099;
+    transition: .5s;
+}
+ul.sub-menu {
+    z-index: 9999;
+    position: absolute;
+    width: 200px;
+    right: 0;
+    background: #666;
+    display: none;
+}
+ul.sub-menu li {
+    list-style: none;
+}
+ul.sub-menu li {
+    padding: 8px;
+    transition: .2s;
+}
+ul.social-media {
+    text-align: left !important;
+    margin: auto !important;
+}
+ul.social-media li a i {
+    height: 24px;
+    width: 21px;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px 0;
+    color: #bdbbbb;
+}
+
+ul.social-media li a i:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+/********************** SEASON **************************/
+.single .season-box h1 {
+    color: #fff;
+    font-size: 19px;
+    padding: 1px 11px;
+    border-right: 3px solid #ea503e;
+    margin: 15px -15px;
+}
+.single .season-infos p {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+    padding: 6px 6px;
+}
+.single .season-infos p span {
+    color: #b5b3af;
+}
+.single .season-infos h1 {
+    font-size: 22px;
+    padding: 8px 0;
+    margin: 0;
+}
+.single .serie-story, .single .movie-story {
+    background: #111;
+    margin: 0;
+    display: -webkit-box;
+}
+.serie-story p, .movie-story p {
+    font-size: 13px;
+    color: #eae5e5;
+}
+.single .serie-story h3, .single .movie-story h3 {
+    font-size: 18px;
+    color: #e43142;
+    padding: 11px 0;
+    margin: 0;
+}
+.single .season-box {
+    margin: 0;
+    padding: 15px 0;
+}
+.single .all-seasons h1, .single .all-episodes h1 {
+    font-size: 17px;
+    padding: 5px 11px;
+    border-right: 3px solid;
+    margin: 16px -15px;
+}
+.single .all-seasons .serie-box img {
+    width: 100%;
+    height: 100%;
+}
+.single .all-seasons .serie-box {
+    padding: 0 7px;
+    margin-bottom: 25px;
+    margin-top: 0 !important;
+}
+.single .all-seasons .serie-box .serie {
+    position: relative;
+}
+.single .all-seasons .serie-box h2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 13px;
+    margin: 0;
+    padding: 11px 3px;
+    text-align: center !important;
+    background: #000000bf;
+    width: 100%;
+    border: none;
+}
+.single .overlay,.archive .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #3333334f;
+    top: 0;
+    right: 0;
+}
+.single a.post-edit-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 19px;
+}
+.single input.shortlink {
+    width: 210px;
+    border-radius: 4px;
+    border: none;
+    background: #00000045;
+    color: #d8d4d4;
+    font-size: 13px;
+    padding: 1px 9px;
+}
+.single span.rating {
+    font-size: 21px;
+    color: #f8eb0a !important;
+}
+.single .rating i {
+    color: #f8eb0a;
+    font-size: 19px;
+}
+.single .trailer {
+    color: #fff;
+    background: #ff0000;
+    padding: 4px 12px;
+    font-size: 13px;
+}
+.single .youtubeTrailer {
+    background: #333c;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    display: none;
+    right: 0;
+    z-index: 9999;
+    text-align: center !important;
+}
+.single .youtubeTrailer iframe {
+    width: 53%;
+    height: 62%;
+    margin: 4% auto;
+}
+
+
+/********************** SERIE **************************/
+.single .serie-box , .single .movie-box{
+    margin: 25px 0;
+}
+.single .serie-box img, .single .season-box img, .single .movie-box img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.single .serie-box h2, .single .movie-box h2 {
+    font-size: 17px;
+    padding: 5px 11px;
+    border-right: 3px solid;
+    margin: 7px -15px;
+}
+/********************** EPISODE **************************/
+.single .all-episodes {
+    margin: 22px 0;
+}
+.single .episode {
+    position: relative;
+    margin-bottom: 15px;
+    height: 171px;
+}
+.single .episode img {
+    width: 100%;
+    height: 100%;
+}
+.single .watching {
+    margin: 25px 0;
+}
+.single .watching h1, .downloading h1 {
+    font-size: 14px;
+    border-right: 3px solid #fff;
+    padding: 4px 11px;
+    margin-bottom: 20px;
+}
+.single .watching select {
+    background: transparent;
+    color: #fff;
+    padding: 0 28px;
+    margin-right: 14px;
+}
+.single .watching select option {
+    color: #000;
+    text-align: center !important;
+}
+.single span.servers {
+    text-align: left !important;
+    margin: 0;
+    padding: 0;
+}
+.single .list-episodes {
+    background: #1b1c1d;
+    padding: 0;
+    height: 449px;
+    overflow: hidden;
+}
+.single .list-episodes .e_list {
+    overflow-y: scroll;
+    height: 396px;
+}
+.single .list-episodes h3 {
+    background: #333;
+    font-size: 16px;
+    padding: 13px 10px;
+    text-align: center !important;
+}
+.single .list-episodes .e_list a {
+    padding: 7px 0;
+    text-align: center !important;
+    display: block;
+    border: 1px solid #171717;
+}
+.single .list-episodes .e_list a:hover, .single .list-episodes a.active {
+    background: #212324;
+    transition: .5s;
+}
+.single .list-episodes .e_list::-webkit-scrollbar {
+    width: .5em;
+}
+.single .list-episodes .e_list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.single .list-episodes .e_list::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.single .episode_player {
+    height: 450px;
+    background: #111;
+}
+.single .downloading a.download_btn {
+    border: 1px solid #9a9595;
+    padding: 4px 10px;
+    margin-left: 10px;
+    color: #9a9595!important;
+    font-size: 14px;
+}
+.single .downloading a.download_btn:hover {
+    transition: .5s;
+    background: #de0418;
+    color: #fff !important;
+}
+.single p.nothing_found {
+    font-size: 13px;
+    padding: 5px 16px;
+}
+.single .badge-danger {
+    color: #fff !important;
+    background-color: #dc3545;
+    font-weight: 100 !important;
+}
+.single .episode_additions {
+    width: 100%;
+    padding: 6px;
+    background: #18191b;
+    text-align: center !important;
+}
+.single span.disabeld {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.single span.disabeld a {
+    color: #463f3f !important;
+}
+.single .youtubeTrailer {
+    background: #333c;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+.badge {
+    font-weight: 100 !important;
+}
+/********************** HOME **************************/
+.all .home-title {
+    font-size: 17px;
+    padding: 2px 11px 0 0;
+    border-right: 3px solid #fff;
+    margin: 20px 0 14px 0;
+}
+.all .serie img, .all .episode img {
+    width: 100%;
+    height: 100%;
+}
+ .serie, .episode {
+    position: relative;
+    height: 246px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.all .serie-box, .all .episode-box, .all .movie-box {
+    padding: 0 6px;
+}
+.all .serie h2, .all .episode h2, .single .all-episodes .episode h2 {
+    font-size: 13px;
+    position: absolute;
+    background: #000000;
+    width: 100%;
+    bottom: -100%;
+    right: 0;
+    margin: 0;
+    text-align: center !important;
+    padding: 15px 6px;
+}
+.all>.container>.row {
+    padding: 0 9px;
+}
+.episode-box .episode .infos, .serie-box .serie .infos {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 12px 9px;
+    z-index: 1;
+}
+.episode-box .episode .infos span:first-child, .serie-box .serie .infos span:first-child {
+    float: right;
+}
+.episode-box .episode .infos span:last-child, .serie-box .serie .infos span:last-child {
+    float: left;
+}
+.all .episode-box:hover .episode h2, .single .all-episodes .episode:hover h2, .all .serie-box:hover .serie h2 {
+    bottom: 0;
+}
+a.alink {
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 4px 10px;
+    float: left;
+}
+a.alink:hover {
+    background: #fff;
+    color: #121619 !important;
+}
+.infos span span {
+    float: right !important;
+}
+
+/********************** Archives **************************/
+h1.archive-title {
+    font-size: 25px;
+    border-right: 3px solid #fff;
+    padding: 5px 13px;
+    margin: 26px 0;
+}
+.pagination {
+    width: 100% !important;
+    display: block !important;
+    padding: 20px 0;
+}
+span.page-numbers.current {
+    background: #de0418;
+    padding: 0 12px;
+    border-radius: 0;
+    border: none;
+}
+.pagination a {
+    background: #6d2020;
+    padding: 0 10px;
+}
+.pagination a:hover {
+    background: #666666;
+}
+
+
+/********************** SEARCHBOX **************************/
+.advanced_search {
+    padding: 27px 0;
+}
+.advanced_search div {
+    margin: auto !important;
+}
+
+div.asl_r .results .item .asl_content h3, div.asl_r .results .item .asl_content h3 a {
+    color: #333 !important;
+}
+p.asl_desc {
+    color: #6b6868;
+}
+/********************** FOOTER **************************/
+footer {
+    background: #111;
+    padding: 15px 12px;
+    margin-top: 25px;
+}
+.copyrights p {
+    display: inline-block;
+}
+/********************** RESPONSIVE **************************/
+@media (max-width:1140px){
+    .logo, ul#menu-top, ul.social-media {
+        text-align: center !important;
+    }
+    ul.social-media>li {
+        padding: 12px 17px;
+    }
+    .copyrights {
+        text-align: center !important;
+    }
+
+
+
+}
+#a>#c {
+	background:black;
+	width:150px;
+	font-size:20px;
+	height:3000px;
+	position:fixed;
+	top:0;
+	right:-150px;
+	transition:1s;
+}
+#a {
+	direction:rtl;
+	
+}
+#a>#b{
+	background:#9E9E9E;
+	color:white;
+	position:fixed;
+	top:0;
+	right:0;
+	font-size:40px;
+	transition:1s;
+}
+#a:hover >#c{
+	background:#9E9E9E;
+	position:fixed;
+	top:0;
+	right:10px;
+	transition:1s;
+}
+#a:hover >#b{
+	background:black;
+	position:fixed;
+	top:0;
+	right:150px;
+	z-index:1000000000;
+	transition:1s;
+}
